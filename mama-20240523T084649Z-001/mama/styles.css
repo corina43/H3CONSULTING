@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    font-family: JetBrains Mono, monospace;
+}
+
+.navbar {
+    width: 100%;
+    background: #CDE8E5;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilos para la sección de héroe */
+.hero {
+    background-color: #4D869C; /* Fondo más oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 60px 20px; /* Espaciado generoso */
+    text-align: center; /* Centramos el texto */
+    border-bottom: 2px solid #3B6E7D; /* Línea sutil en el borde inferior */
+}
+
+.hero-content {
+    max-width: 800px; /* Limitar el ancho máximo */
+    margin: 0 auto; /* Centramos el contenido */
+}
+
+.hero h1 {
+    font-size: 36px; /* Tamaño de fuente grande para el título */
+    color: #ffffff; /* Color del texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.hero p {
+    font-size: 18px; /* Tamaño de fuente mediano para el párrafo */
+    color: #e0e0e0; /* Color del texto */
+}
+
+/* Estilos para la sección de contenido */
+.content {
+    padding: 40px 20px; /* Espaciado generoso */
+    background-color: #f7f9fb; /* Fondo claro */
+}
+
+.content h2 {
+    font-size: 28px; /* Tamaño de fuente grande para los encabezados */
+    color: #333; /* Color del texto */
+    margin-top: 40px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.content p {
+    font-size: 16px; /* Tamaño de fuente estándar para los párrafos */
+    color: #666; /* Color del texto */
+    line-height: 1.6; /* Altura de línea */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.content ul {
+    margin-bottom: 20px; /* Espacio inferior */
+    padding-left: 20px; /* Espacio a la izquierda */
+}
+
+.content ul li {
+    font-size: 16px; /* Tamaño de fuente estándar */
+    color: #555; /* Color del texto */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.content ul li strong {
+    color: #333; /* Color del texto para énfasis */
+}
+
+.logo {
+    width: 116px;
+    height: 62px;
+    margin-right: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-item {
+    color: #4D869C;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.5;
+    padding: 10px 20px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    color: #4D869C;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Submenu */
+.submenu {
+    position: relative;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.submenu:hover .submenu-content {
+    display: block;
+}
+/* Parallax effect */
+.parallax {
+    background-image: url('image_(7).png'); /* Ruta de la imagen en el mismo directorio */
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFD700; /* Color dorado para el texto */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Services section */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    color: #007BFF; /* Color del texto */
+}
+
+.services p {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    width: calc(25% - 20px);
+    background: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+}
+
+.service-card h3 {
+    font-size: 16px;
+    color: #007BFF;
+    padding: 10px;
+}
+
+/* Certifications section */
+.certifications {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.certifications-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.certifications-row img {
+    width: 150px;
+    height: auto;
+}
+
+.certifications-text h2 {
+    font-size: 28px;
+    color: #007BFF;
+}
+
+.certifications-text p {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.piramide {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.piramide-text h2 {
+    font-size: 28px;
+    color: #007BFF;
+    text-align: center;
+}
+
+.piramide-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.piramide-text p {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.technical-services {
+    padding: 40px 20px;
+    text-align: center;
+    background: #476f9e;
+    color: white;
+}
+
+.technical-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    max-width: 300px;
+}
+
+.technical-service img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.technical-service h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.technical-service p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}

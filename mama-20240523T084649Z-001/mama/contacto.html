@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - H3 Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+
+        .about-us, .vision-mission, .why-choose-us, .contact {
+            padding: 20px;
+        }
+
+        .about-us h1, .vision-mission h2, .why-choose-us h2, .contact h1 {
+            color: #0056b3;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .content img {
+            margin-right: 20px;
+            border-radius: 10px;
+            width: 300px;
+            height: auto;
+        }
+
+        .vision, .mission {
+            margin-right: 20px;
+        }
+
+        .vision h3, .mission h3 {
+            color: #333;
+        }
+
+        .vision p, .mission p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .why-choose-us ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .why-choose-us ul li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .why-choose-us ul li strong {
+            color: #0056b3;
+        }
+
+        .closing-statement {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #0056b3;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .contact-form button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown Menu with Submenu</title>
+        <link rel="stylesheet" href="styles.css">
+    
+    </head>
+    <body>
+        <nav class="navbar">
+            <img src="img\image (5).png" alt="Logo" class="logo">
+            <a style="margin: 10px;" href="index.html">Inicio</a>
+            <div class="dropdown">
+                <a style="margin: 10px;"  href="#">Nuestros Servicios</a>
+                <div class="dropdown-content">
+                    <div class="submenu">
+    
+                    <a href="#">Ciberseguridad</a>
+                        <div class="submenu-content">
+                            <a href="audittcibeerr.html">Auditoría de Ciberseguridad</a>
+                            <a href="cibgestio.html">Ciberseguridad Gestionada</a>
+                            <a href="Serviciosdeconsultariaestrategica.html">Servicios de consultoría estratégica en ciberseguridad</a>
+    
+                        </div>
+                    </div>
+                    <div class="submenu">
+                        <a href="#">Soporte IT y Cloud</a>
+                        <div class="submenu-content">
+                            <a href="SoporteITyasitencia.html">Soporte IT y Asistencia 24/7</a>
+                            <a href="sevgestionnube.html">Servicios Gestionados en la Nube</a>
+                            <a href="infraestructuracloud.html">Infraestructura y Cloud</a>
+    
+                        </div>
+                    </div>
+                        <div class="submenu">
+                        <a href="#">Formación y Desarrollo</a>
+                        <div class="submenu-content">
+                            <a href="Formacionydesarrollo.html">Formación y Concienciación en Ciberseguridad</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a style="margin: 10px;"  href="sobre_nosotros.html">Sobre Nosotros</a>
+            <a style="margin: 10px;"  href="contacto.html">Contacto y presupuestos</a>
+        </nav>    
+        
+    <!-- Contenido de la página -->
+    <section class="contact">
+        <h1>Contacto</h1>
+        <p>Para cualquier consulta o presupuesto, por favor rellene el siguiente formulario:</p>
+        <form class="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script>
+        // Add any JavaScript functionality here if needed
+    </script>
+</body>
+</html>
